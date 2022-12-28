@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('alumni', function (Blueprint $table){
+        Schema::create('alumni', function (Blueprint $table) {
             $table->id('id_alumni');
             $table->string('nama_lengkap');
             $table->string('jk');
@@ -53,8 +53,7 @@ return new class extends Migration
             $table->string('p9');
             $table->string('p10');
             $table->timestamps();
-        }
-    );
+        });
     }
 
     /**
