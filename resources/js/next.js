@@ -1,0 +1,56 @@
+$("#next1").click(function(){
+    $("#dataPendidikan").removeClass('d-none');
+    $("#dataPribadi").addClass('d-none');
+    $("#dataPekerjaan").addClass('d-none');
+    $("#dataRelevansi").addClass('d-none');
+    $("#dataPengalaman").addClass('d-none');
+    $("#dataIndikator").addClass('d-none');
+    $("#pendidikan").addClass('btn-success');
+    $("#pribadi").removeClass('btn-success');
+    $("#pekerjaan").removeClass('btn-success');
+    $("#relevansi").removeClass('btn-success');
+    $("#pengalaman").removeClass('btn-success');
+    $("#indikator").removeClass('btn-success');
+});
+$("#next2").click(function(){
+    $("#dataPendidikan").addClass('d-none');
+    $("#dataPribadi").addClass('d-none');
+    $("#dataPekerjaan").addClass('d-none');
+    $("#dataRelevansi").removeClass('d-none');
+    $("#dataPengalaman").addClass('d-none');
+    $("#dataIndikator").addClass('d-none');
+    $("#pekerjaan").addClass('btn-success');
+    $("#pribadi").removeClass('btn-success');
+    $("#pendidikan").removeClass('btn-success');
+    $("#relevansi").removeClass('btn-success');
+    $("#pengalaman").removeClass('btn-success');
+    $("#indikator").removeClass('btn-success');
+});
+$("#next3").click(function(e){
+    $("#dataPendidikan").addClass('d-none');
+    $("#dataPribadi").addClass('d-none');
+    $("#dataPekerjaan").addClass('d-none');
+    $("#dataRelevansi").addClass('d-none');
+    $("#dataPengalaman").removeClass('d-none');
+    $("#dataIndikator").addClass('d-none');
+    $("#relevansi").addClass('btn-success');
+    $("#pekerjaan").removeClass('btn-success');
+    $("#pribadi").removeClass('btn-success');
+    $("#pendidikan").removeClass('btn-success');
+    $("#pengalaman").removeClass('btn-success');
+    $("#indikator").removeClass('btn-success');
+});
+$("#next4").click(function(e){
+    $("#dataPendidikan").addClass('d-none');
+    $("#dataPribadi").addClass('d-none');
+    $("#dataPekerjaan").removeClass('d-none');
+    $("#dataRelevansi").addClass('d-none');
+    $("#dataPengalaman").addClass('d-none');
+    $("#dataIndikator").addClass('d-none');
+    $("#pekerjaan").addClass('btn-success');
+    $("#pribadi").removeClass('btn-success');
+    $("#pendidikan").removeClass('btn-success');
+    $("#relevansi").removeClass('btn-success');
+    $("#pengalaman").removeClass('btn-success');
+    $("#indikator").removeClass('btn-success');
+});

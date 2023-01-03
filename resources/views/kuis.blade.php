@@ -20,12 +20,12 @@
                                 <!-- Card Header - Dropdown -->
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <a href="#" id="pribadi" class="m-0 font-weight-bold btn btn-primary">Data Pribadi</a>
-                                    <a href="#" id="pendidikan" class="m-0 font-weight-bold btn btn-primary">Riwayat Pendidikan</a>
-                                    <a href="#" id="pekerjaan" class="m-0 font-weight-bold btn btn-primary">Riwayat Pekerjaan</a>
-                                    <a href="#" id="relevansi" class="m-0 font-weight-bold btn btn-primary">Relevansi</a>
-                                    <a href="#" id="pengalaman" class="m-0 font-weight-bold btn btn-primary">Pengalaman</a>
-                                    <a href="#" id="indikator" class="m-0 font-weight-bold btn btn-primary">Indikator</a>
+                                    <a href="#" id="pribadi" class="m-0 font-weight-bold btn ">Data Pribadi</a>
+                                    <a href="#" id="pendidikan" class="m-0 font-weight-bold btn ">Riwayat Pendidikan</a>
+                                    <a href="#" id="pekerjaan" class="m-0 font-weight-bold btn ">Riwayat Pekerjaan</a>
+                                    <a href="#" id="relevansi" class="m-0 font-weight-bold btn ">Relevansi</a>
+                                    <a href="#" id="pengalaman" class="m-0 font-weight-bold btn ">Pengalaman</a>
+                                    <a href="#" id="indikator" class="m-0 font-weight-bold btn ">Indikator</a>
                                     <div class="dropdown no-arrow">
                                         <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,7 +50,7 @@
                                         <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="">Nama Lengkap</label>
-                                            <input type="text" name="nama_lengkap" class="form-control">
+                                            <input type="text" name="nama_lengkap" class="form-control" id="nama_lengkap">
                                         </div>
                                         </div>
                                         <div class="col-md-6">
@@ -67,35 +67,35 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="">Asal SMA</label>
-                                            <input type="text" name="asalsma" class="form-control">
+                                            <input type="text" name="asalsma" id="aslsma" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="">Kabupaten/Kota</label>
-                                            <input type="text" name="kab_smu" class="form-control">
+                                            <input type="text" name="kab_smu" id="kab_smu" class="form-control">
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="">Provinsi</label>
-                                            <input type="text" name="prov_smu" class="form-control">
+                                            <input type="text" name="prov_smu" id="prov_smu" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                             <label for="">Kode Pos</label>
-                                            <input type="text" name="pos_smu" class="form-control">
+                                            <input type="text" name="pos_smu" id="pos_smu" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="">Tempat Lahir</label>
-                                            <input type="text" name="tempatLahir" class="form-control"> 
+                                            <input type="text" name="tempatLahir" id="tempatLahir" class="form-control"> 
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                             <label for="">Tanggal Lahir</label>
-                                            <input type="date" name="tglLahir" class="form-control">
+                                            <input type="date" name="tglLahir" id="tglLahir" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -107,13 +107,13 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="">No. Telpon</label>
-                                                <input type="text" name="telpkantor" class="form-control">
+                                                <input type="text" name="telpkantor" id="telpkantor" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="">Kode Pos</label>
-                                                <input type="text" name="kodekantor" class="form-control">
+                                                <input type="text" name="kodekantor" id="kodekantor" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -125,31 +125,31 @@
                                             <div class="col-md-3">
                                                 <div class="from-group">
                                                     <label for="">Kelurahan</label>
-                                                    <input type="text" name="kelurahan" class="form-control">
+                                                    <input type="text" name="kelurahan" id="kelurahan" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="from-group">
                                                     <label for="">Kecamatan</label>
-                                                    <input type="text" name="kecamatan" class="form-control">
+                                                    <input type="text" name="kecamatan" id="kecamatan" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="from-group">
                                                     <label for="">Kabupaten</label>
-                                                    <input type="text" name="kabupaten" class="form-control">
+                                                    <input type="text" name="kabupaten" id="kabupaten" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="form-group">
                                                     <label for="">Provinsi</label>
-                                                    <input type="text" name="provinsi" class="form-control">
+                                                    <input type="text" name="provinsi" id="provinsi" class="form-control">
                                                 </div>
                                             </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="">No. Telpon</label>
-                                                <input type="text" name="notelp" class="form-control">
+                                                <input type="text" name="notelp" id="notelp" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -159,7 +159,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <a href="#" class="btn btn-primary" id="next1">Next</a>
+                                            <button type="button" class="btn btn-primary" id="next1" >Next</button>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +170,8 @@
                                         <div class="form-group">
                                             <label for="">Tahun Masuk</label>
                                             <select name="thnmasuk" id="thnmasuk" class="form-control">
-                                                <option value="<?= date('Y') ?>"><?= date('Y') ?></option>
+                                                {{-- <option value="<?= date('Y') ?>"><?= date('Y') ?></option> --}}
+                                                <option value="">--Pilih Tahun--</option>
                                                 <option value="2016">2016</option>
                                                 <option value="2017">2017</option>
                                                 <option value="2018">2018</option>
@@ -203,7 +204,7 @@
                                         <div class="col-md-3">
                                             <div class="form-group">
                                                 <label for="">Tahun Wisuda</label>
-                                                <input type="text" name="thnwisuda" id="thnlulus" class="form-control">
+                                                <input type="text" name="thnwisuda" id="thnwisuda" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -216,6 +217,9 @@
 
                                                 </select>
                                             </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button type="button" class="btn btn-primary" id="next2">Next</button>
                                         </div>
                                     </div>
                                 </div>
@@ -266,13 +270,13 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="">Tahun Bekerja</label>
-                                                <input type="text" name="thnbekerja" class="form-control">
+                                                <input type="text" name="thnbekerja" id="thnbekerja" class="form-control">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="">Bagaimana proses Saudara mendapatkan pekerjaan ini? </label>
-                                                <select name="p1" id="01" class="form-control">
+                                                <select name="p1" id="p1" class="form-control">
                                                     <option value="aktif">Aktif (Mencari Sendiri)</option>
                                                     <option value="pasif">Pasif (Ditawari Pekerjaan)</option>
                                                 </select>
@@ -282,30 +286,30 @@
                                             <div class="form-group">
                                                 <label for="">Darimana Saudara mengetahui atau mendapatkan informasi mengenai adanya pekerjaan ini?</label>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2" id="flexSwitchCheckDefault0">
-                                                    <label class="form-check-label" for="flexSwitchCheckDefault0" >Iklan</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2" id="p2">
+                                                    <label class="form-check-label" for="p2" >Iklan</label>
                                                 </div>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
-                                                    <label class="form-check-label" for="flexSwitchCheckDefault1" name="p21">Internet</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2_1" id="p2_1">
+                                                    <label class="form-check-label" for="p2_1">Internet</label>
                                                 </div>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2">
-                                                    <label class="form-check-label" for="flexSwitchCheckDefault2" name="p21">Pengumuman di Kampus</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2_2" id="p2_2">
+                                                    <label class="form-check-label" for="p2_2" >Pengumuman di Kampus</label>
                                                 </div>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3">
-                                                    <label class="form-check-label" for="flexSwitchCheckDefault3" name="p21">Koneksi, (Teman, Dosen, Saudara/Keluarga, Dll)</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2_3" id="p2_3">
+                                                    <label class="form-check-label" for="p2_3" >Koneksi, (Teman, Dosen, Saudara/Keluarga, Dll)</label>
                                                 </div>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault4">
-                                                    <label class="form-check-label" for="flexSwitchCheckDefault4" name="p21">Info Lowongan Kemahasiswaan</label>
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p2_4" id="p2_4">
+                                                    <label class="form-check-label" for="p2_4" >Info Lowongan Kemahasiswaan</label>
                                                 </div>
                                                   <div class="input-group input-group-sm mb-3">
                                                     <div class="input-group-prepend">
-                                                      <span class="input-group-text" id="inputGroup-sizing-sm" name="p21">Lainnya, Sebutkan</span>
+                                                      <span class="input-group-text" id="inputGroup-sizing-sm" >Lainnya, Sebutkan</span>
                                                     </div>
-                                                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                                                    <input type="text" class="form-control" name="p2_5" id="p2_5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                                   </div>
                                             </div>
                                         </div>
@@ -313,7 +317,7 @@
                                             <div class="form-group">
                                                 <label for=""> Sejauh mana pekerjaan Saudara yang terakhir/sekarang sesuai dengan harapan ketika pertama
                                                     kali belajar di AMIK Global?</label>
-                                                    <select name="p3" id="##" class="form-control">
+                                                    <select name="p3" id="p3" class="form-control">
                                                         <option value="sangat sesuai dengan harapan">sangat sesuai dengan harapan</option>
                                                         <option value="sesuai harapan">sesuai harapan</option>
                                                         <option value="kurang sesuai harapan">kurang sesuai harapan</option>
@@ -384,7 +388,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <a href="#" class="btn btn-primary"  id="next2">Next</a>
+                                                <a href="#" class="btn btn-primary"  id="next3">Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -397,26 +401,26 @@
                                                 <label for=""> Apakah pendidikan yang Saudara dapat di AMIK Global relevan dengan pekerjaan Saudara?
                                                 </label>
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" name="p9" id="flexSwitchCheckDefault5">
+                                                    <input class="form-check-input" type="checkbox" role="switch" name="p9" id="p9">
                                                     <label class="form-check-label" for="flexSwitchCheckDefault5" >Ya</label>
                                                 </div>
                                                 <div class="input-group input-group-sm mb-3">
                                                     <div class="input-group-prepend">
-                                                      <span class="input-group-text" id="inputGroup-sizing-sm" name="p91">Tidak</span>
+                                                      <span class="input-group-text" id="inputGroup-sizing-sm" >Tidak</span>
                                                     </div>
-                                                    <input type="text" class="form-control" aria-label="Sizing example input" name="p91" aria-describedby="inputGroup-sizing-sm">
+                                                    <input type="text" class="form-control" aria-label="Sizing example input" name="p9_1" id="p9_1" aria-describedby="inputGroup-sizing-sm">
                                                   </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="">Dari pengalaman Saudara bekerja, apa saran praktis Saudara untuk pendidikan di AMIK dalam rangka meningkatkan kesesuaian antara pendidikan dengan lapangan pekerjaan? </label>
-                                                <textarea name="p10" id="saran" cols="30" rows="10" class="form-control" placeholder="Saran"></textarea>
+                                                <textarea name="p10" id="p10" cols="30" rows="10" class="form-control" placeholder="Saran"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <a href="#" class="btn btn-primary" id="next3">Next</a>
+                                                <a href="#" class="btn btn-primary" id="next4">Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -442,22 +446,22 @@
                                                             <td>pengalaman belajar di dalam kelas </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -465,22 +469,22 @@
                                                             <td>pengalaman belajar di laboratorium </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_2" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_2" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_2" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_2" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -488,22 +492,22 @@
                                                             <td>pengalaman belajar di masyarakat </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_3" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_3" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_3" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_3" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -511,22 +515,22 @@
                                                             <td>pengalaman magang di perusahaan/instansi  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_4" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_4" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_4" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_4" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -534,22 +538,22 @@
                                                             <td>pengalaman belajar dalam organisasi kmhswn  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_5" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_5" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_5" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_5" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -557,22 +561,22 @@
                                                             <td>pengalaman belajar dalam pergaulan kampus  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_6" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_6" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_6" value="Kurang Penting"  type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_6" value="Tidak Penting"  type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -580,27 +584,32 @@
                                                             <td>pengalaman belajar mandiri   </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input"name="peng_7" value="Sangat Penting"  type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_7" value="Penting"  type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_7" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_7" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <a href="#" class="btn btn-primary" id="next5">Next</a>
                                             </div>
                                         </div>
                                     </div>
@@ -615,25 +624,25 @@
                                                     <tr>
                                                         <td class="pr-5">
                                                             <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault6">
+                                                                <input class="form-check-input" name="ind_1" value="Sangat Mampu" type="checkbox" role="switch" id="flexSwitchCheckDefault6">
                                                                 <label class="form-check-label" for="flexSwitchCheckDefault6">Sangat Mampu</label>
                                                             </div>
                                                         </td>
                                                         <td class="pr-5">
                                                             <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault7">
+                                                                <input class="form-check-input" name="ind_1" value="Mampu" type="checkbox" role="switch" id="flexSwitchCheckDefault7">
                                                                 <label class="form-check-label" for="flexSwitchCheckDefault7">Mampu</label>
                                                             </div>
                                                         </td>
                                                         <td class="pr-5">
                                                             <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault8">
+                                                                <input class="form-check-input" name="ind_1" value="Kurang Mampu" type="checkbox" role="switch" id="flexSwitchCheckDefault8">
                                                                 <label class="form-check-label" for="flexSwitchCheckDefault8">Kurang Mampu</label>
                                                             </div>
                                                         </td>
                                                         <td>
                                                             <div class="form-check form-switch">
-                                                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault9">
+                                                                <input class="form-check-input" name="ind_1" value="Sangat Tidak Mampu" type="checkbox" role="switch" id="flexSwitchCheckDefault9">
                                                                 <label class="form-check-label" for="flexSwitchCheckDefault9">Sangat Tidak Mampu</label>
                                                             </div>
                                                         </td>
@@ -646,7 +655,7 @@
                                             <div class="form-group">
                                                 <label for=""> Sejauh ini, menurut Saudara lulusan UMLA yang bagaimana yg diperlukan oleh pasar/lapangan
                                                     kerja?</label>
-                                                    <select name="#" id="#" class="form-control">
+                                                    <select name="ind_2" id="ind_2" class="form-control">
                                                         <option value="generik">Generik (Umum)</option>
                                                         <option value="spesifik">Spesifik</option>
                                                     </select>
@@ -671,22 +680,22 @@
                                                             <td>Pengetahuan umum</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -694,22 +703,22 @@
                                                             <td> Bahasa Inggris</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_1" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_1" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_1" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_1" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -717,22 +726,22 @@
                                                             <td> Komputer </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_2" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_2" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_2" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_2" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -740,22 +749,22 @@
                                                             <td> Metodologi penelitian </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_3" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_3" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_3" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_3" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -763,22 +772,22 @@
                                                             <td> Kerjasama tim</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_4" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_4" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_4" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_4" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -786,22 +795,22 @@
                                                             <td> Keterampilan komunikasi lisan </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_5" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_5" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_5" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_5" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -809,22 +818,22 @@
                                                             <td> Keterampilan komunikasi tertulis  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_6" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_6" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_6" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_6" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -832,22 +841,22 @@
                                                             <td> Proses pemberdayaan masyarakat   </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_7" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_7" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_7" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_7" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -855,22 +864,22 @@
                                                             <td> Pengetahuan teoritis spesifik Jurusan  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_8" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_8" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_8" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_8" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -878,22 +887,22 @@
                                                             <td> Pengetahuan praktis spesifik Jurusan  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_9" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_9" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_9" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_9" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -901,22 +910,22 @@
                                                             <td> Manajemen organisasi </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_10" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_10" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_10" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_10" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -924,22 +933,22 @@
                                                             <td> Kepemimpinan/leadership </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_11" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_11" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_11" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_3_11" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -966,22 +975,22 @@
                                                             <td>Pengetahuan umum</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -989,22 +998,22 @@
                                                             <td> Bahasa Inggris</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_1" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_1" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_1" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_1" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1012,22 +1021,22 @@
                                                             <td> Komputer </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_2" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_2" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_2" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_2" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1035,22 +1044,22 @@
                                                             <td> Metodologi penelitian </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_3" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_3" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_3" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_3" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1058,22 +1067,22 @@
                                                             <td> Kerjasama tim</td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_4" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_4" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_4" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_4" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1081,22 +1090,22 @@
                                                             <td> Keterampilan komunikasi lisan </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_5" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_5" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_5" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_5" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1104,22 +1113,22 @@
                                                             <td> Keterampilan komunikasi tertulis  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_6" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_6" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_6" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_6" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1127,22 +1136,22 @@
                                                             <td> Proses pemberdayaan masyarakat   </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_7" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_7" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_7" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_7" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1150,22 +1159,22 @@
                                                             <td> Pengetahuan teoritis spesifik Jurusan  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_8" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_8" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_8" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_8" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1173,22 +1182,22 @@
                                                             <td> Pengetahuan praktis spesifik Jurusan  </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_9" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_9" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_9" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_9" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1196,22 +1205,45 @@
                                                             <td> Manajemen organisasi </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_10" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_10" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_10" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="ind_4_10" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td> Kepemimpinan/leadership </td>
+                                                            <td class="text-center">
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" name="ind_4_11" value="Sangat Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" name="ind_4_11" value="Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" name="ind_4_11" value="Kurang Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="form-check form-switch">
+                                                                    <input class="form-check-input" name="ind_4_11" value="Tidak Menguasai" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
                                                                 </div>
                                                             </td>
                                                         </tr>
@@ -1242,6 +1274,7 @@
 @section('scripts')
     <script>
         $(document).ready(function(){
+            $("#pribadi").addClass('btn-success');
             $("#pribadi").click(function(){
                 // $("#dataPendidikan").addClass('d-none');
                 $("#dataPribadi").removeClass('d-none');
@@ -1250,7 +1283,12 @@
                 $("#dataRelevansi").addClass('d-none');
                 $("#dataPengalaman").addClass('d-none');
                 $("#dataIndikator").addClass('d-none');
-
+                $("#pribadi").addClass('btn-success');
+                $("#pendidikan").removeClass('btn-success');
+                $("#pekerjaan").removeClass('btn-success');
+                $("#relevansi").removeClass('btn-success');
+                $("#pengalaman").removeClass('btn-success');
+                $("#indikator").removeClass('btn-success');
             });
             $("#pendidikan").click(function(e){
                 $("#dataPribadi").addClass('d-none');
@@ -1259,6 +1297,12 @@
                 $("#dataPengalaman").addClass('d-none');
                 $("#dataIndikator").addClass('d-none');
                 $("#dataPendidikan").removeClass("d-none");
+                $("#pendidikan").addClass('btn-success');
+                $("#pribadi").removeClass('btn-success');
+                $("#pekerjaan").removeClass('btn-success');
+                $("#relevansi").removeClass('btn-success');
+                $("#pengalaman").removeClass('btn-success');
+                $("#indikator").removeClass('btn-success');
             });
             $("#pekerjaan").click(function(e){
                 $("#dataPribadi").addClass('d-none');
@@ -1267,6 +1311,12 @@
                 $("#dataPengalaman").addClass('d-none');
                 $("#dataIndikator").addClass('d-none');
                 $("#dataPendidikan").addClass("d-none");
+                $("#pekerjaan").addClass('btn-success');
+                $("#pribadi").removeClass('btn-success');
+                $("#pendidikan").removeClass('btn-success');
+                $("#relevansi").removeClass('btn-success');
+                $("#pengalaman").removeClass('btn-success');
+                $("#indikator").removeClass('btn-success');
             });
             $("#relevansi").click(function(e){
                 $("#dataPribadi").addClass('d-none');
@@ -1275,6 +1325,12 @@
                 $("#dataPengalaman").addClass('d-none');
                 $("#dataIndikator").addClass('d-none');
                 $("#dataPendidikan").addClass("d-none");
+                $("#relevansi").addClass('btn-success');
+                $("#pekerjaan").removeClass('btn-success');
+                $("#pribadi").removeClass('btn-success');
+                $("#pendidikan").removeClass('btn-success');
+                $("#pengalaman").removeClass('btn-success');
+                $("#indikator").removeClass('btn-success');
             });
             $("#pengalaman").click(function(e){
                 $("#dataPendidikan").addClass("d-none");
@@ -1283,6 +1339,13 @@
                 $("#dataRelevansi").addClass('d-none');
                 $("#dataPengalaman").removeClass('d-none');
                 $("#dataIndikator").addClass('d-none');
+                $("#pengalaman").addClass('btn-success');
+                $('#relevansi').removeClass('btn-success');
+                $("#pekerjaan").removeClass('btn-success');
+                $("#pribadi").removeClass('btn-success');
+                $("#pendidikan").removeClass('btn-success');
+                $("#indikator").removeClass('btn-success');
+                
             });
             $("#indikator").click(function(e){
                 $("#dataPribadi").addClass('d-none');
@@ -1291,32 +1354,86 @@
                 $("#dataPengalaman").addClass('d-none');
                 $("#dataIndikator").removeClass('d-none');
                 $("#dataPendidikan").addClass("d-none");
+                $("#indikator").addClass('btn-success');
+                $('#relevansi').removeClass('btn-success');
+                $("#pekerjaan").removeClass('btn-success');
+                $("#pribadi").removeClass('btn-success');
+                $("#pendidikan").removeClass('btn-success');
+                $("#pengalaman").removeClass('btn-success');
+                
             });
             
-            $("#next1").click(function(){
-                $("#dataPendidikan").removeClass('d-none');
-                $("#dataPribadi").addClass('d-none');
-                $("#dataPekerjaan").addClass('d-none');
-                $("#dataRelevansi").addClass('d-none');
-                $("#dataPengalaman").addClass('d-none');
-                $("#dataIndikator").addClass('d-none');
-            });
-            $("#next2").click(function(){
-                $("#dataPendidikan").addClass('d-none');
-                $("#dataPribadi").addClass('d-none');
-                $("#dataPekerjaan").addClass('d-none');
-                $("#dataRelevansi").removeClass('d-none');
-                $("#dataPengalaman").addClass('d-none');
-                $("#dataIndikator").addClass('d-none');
-            });
-            $("#next3").click(function(e){
-                $("#dataPendidikan").addClass('d-none');
-                $("#dataPribadi").addClass('d-none');
-                $("#dataPekerjaan").addClass('d-none');
-                $("#dataRelevansi").addClass('d-none');
-                $("#dataPengalaman").removeClass('d-none');
-                $("#dataIndikator").addClass('d-none');
-            });
+            // $("#next1").click(function(){
+            //     $("#dataPendidikan").removeClass('d-none');
+            //     $("#dataPribadi").addClass('d-none');
+            //     $("#dataPekerjaan").addClass('d-none');
+            //     $("#dataRelevansi").addClass('d-none');
+            //     $("#dataPengalaman").addClass('d-none');
+            //     $("#dataIndikator").addClass('d-none');
+            //     $("#pendidikan").addClass('btn-success');
+            //     $("#pribadi").removeClass('btn-success');
+            //     $("#pekerjaan").removeClass('btn-success');
+            //     $("#relevansi").removeClass('btn-success');
+            //     $("#pengalaman").removeClass('btn-success');
+            //     $("#indikator").removeClass('btn-success');
+            // });
+            // $("#next2").click(function(){
+            //     $("#dataPendidikan").addClass('d-none');
+            //     $("#dataPribadi").addClass('d-none');
+            //     $("#dataPekerjaan").removeClass('d-none');
+            //     $("#dataRelevansi").addClass('d-none');
+            //     $("#dataPengalaman").addClass('d-none');
+            //     $("#dataIndikator").addClass('d-none');
+            //     $("#pribadi").removeClass('btn-success');
+            //     $("#pendidikan").removeClass('btn-success');
+            //     $("#pekerjaan").addClass('btn-success');
+            //     $("#relevansi").removeClass('btn-success');
+            //     $("#pengalaman").removeClass('btn-success');
+            //     $("#indikator").removeClass('btn-success');
+            // });
+            // $("#next3").click(function(){
+            //     $("#dataPendidikan").addClass('d-none');
+            //     $("#dataPribadi").addClass('d-none');
+            //     $("#dataPekerjaan").addClass('d-none');
+            //     $("#dataRelevansi").removeClass('d-none');
+            //     $("#dataPengalaman").addClass('d-none');
+            //     $("#dataIndikator").addClass('d-none');
+            //     $("#pribadi").removeClass('btn-success');
+            //     $("#pendidikan").removeClass('btn-success');
+            //     $("#pekerjaan").removeClass('btn-success');
+            //     $("#relevansi").addClass('btn-success');
+            //     $("#pengalaman").removeClass('btn-success');
+            //     $("#indikator").removeClass('btn-success');
+            // });
+            // $("#next4").click(function(){
+            //     $("#dataPendidikan").addClass('d-none');
+            //     $("#dataPribadi").addClass('d-none');
+            //     $("#dataPekerjaan").addClass('d-none');
+            //     $("#dataRelevansi").addClass('d-none');
+            //     $("#dataPengalaman").removeClass('d-none');
+            //     $("#dataIndikator").addClass('d-none');
+            //     $("#pribadi").removeClass('btn-success');
+            //     $("#pendidikan").removeClass('btn-success');
+            //     $("#pekerjaan").removeClass('btn-success');
+            //     $("#relevansi").removeClass('btn-success');
+            //     $("#pengalaman").addClass('btn-success');
+            //     $("#indikator").removeClass('btn-success');
+            // });
+            // $("#next5").click(function(){
+            //     $("#dataPendidikan").addClass('d-none');
+            //     $("#dataPribadi").addClass('d-none');
+            //     $("#dataPekerjaan").addClass('d-none');
+            //     $("#dataRelevansi").addClass('d-none');
+            //     $("#dataPengalaman").addClass('d-none');
+            //     $("#dataIndikator").removeClass('d-none');
+            //     $("#pribadi").removeClass('btn-success');
+            //     $("#pendidikan").removeClass('btn-success');
+            //     $("#pekerjaan").removeClass('btn-success');
+            //     $("#relevansi").removeClass('btn-success');
+            //     $("#pengalaman").removeClass('btn-success');
+            //     $("#indikator").addClass('btn-success');
+            // });
+            
 
             // $("#tahunmasuk").datepicker({
             //     format: "yyyy",
