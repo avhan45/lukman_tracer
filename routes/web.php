@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AlumniController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('kuis');
+    return view('login');
 });
+Route::post('/login', [LoginController::class, 'proses'] );
 // Route::post('/alumni/create', 'AlumniController@store');
 Route::post('/alumni/create', [AlumniController::class, 'store']);
