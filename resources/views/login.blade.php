@@ -47,7 +47,7 @@
                                             </div>
                                         @endif
                                     </div>
-                                    <form class="user" action="/login" method="post">
+                                    <form class="user" action="/proses" method="post">
                                         @csrf
                                         @method('post')
                                         <div class="form-group">
