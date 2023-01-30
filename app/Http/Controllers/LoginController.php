@@ -11,6 +11,7 @@ class LoginController extends Controller
         $nim = $request->get('nim');
         $pass = $request->get('password');
 
+        
         if(empty($nim) || empty($pass)){
             return back()->with('error', 'Nim dan Password Tidak Boleh Kosong');
             return;

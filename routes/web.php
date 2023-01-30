@@ -21,3 +21,8 @@ Route::get('/', function () {
 Route::post('/login', [LoginController::class, 'proses'] );
 // Route::post('/alumni/create', 'AlumniController@store');
 Route::post('/alumni/create', [AlumniController::class, 'store']);
+Route::get('/home', [AlumniController::class, 'index']);
+Route::get('alumni',[AlumniController::class, 'alumni'])->name('alumni');
+Route::get('/qs', function() {
+    return view('kuis');
+});

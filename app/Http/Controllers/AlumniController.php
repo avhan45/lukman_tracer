@@ -8,7 +8,13 @@ use Illuminate\Http\Request;
 class AlumniController extends Controller
 {
     public function index(){
-        echo "Welcome";
+        return view('dashboard');
+    }
+
+    public function alumni(){
+        $alumni = Alumni::all();
+
+        return view('alumni.index',compact('alumni'));
     }
 
     public function store(Request $request){
