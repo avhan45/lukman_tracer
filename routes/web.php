@@ -36,4 +36,5 @@ Route::get('/editUser/{id}', [UserController::class, 'edit'])->name('edit');
 Route::get('/deleteUser/{id}', [UserController::class, 'delete'])->name('delete');
 Route::get('/tambahUser', [UserController::class, 'create'])->name('tambahUser');
 Route::post('/user_store', [UserController::class, 'store'])->name('tambahkan');
-Route::put('/user_update/{id}', [UserController::class, 'update'])->name('update');
+Route::put('/user_update/{id}',[UserController::class, 'update'])->name('update');
+Route::get('/kusioner',[UserController::class, 'kuis'])->name('kusioner');

@@ -9,22 +9,28 @@ use Illuminate\Http\Request;
 class AlumniController extends Controller
 {
     public function index(Request $request){
-        if($request->session()->has('nama')){
+        if(!empty($request->session()->has('nama'))){
             $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
         }
 
         $jumlah = User::count();
         $jumlahQs = Alumni::count();
-        return view('dashboard', compact('user','jumlah','jumlahQs'));
+        return view('dashboard', compact('user','jumlah','jumlahQs','level'));
     }
 
     public function alumni(Request $request){
-        $alumni = Alumni::all();
-        if($request->session()->has('nama')){
+        if(!empty($request->session()->has('nama'))){
             $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
         }
+        $alumni = Alumni::all();
         
-        return view('alumni.index',compact('alumni', 'user'));
+        return view('alumni.index',compact('alumni', 'user','level'));
     }
 
     public function store(Request $request){

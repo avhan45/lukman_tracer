@@ -53,6 +53,8 @@
                     <span>Dashboard</span></a>
             </li>
 
+            @if($level == "admin")
+                
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -82,6 +84,26 @@
                     <span>User</span>
                 </a>
             </li>
+            @else
+            <hr class="sidebar-divider">
+
+
+            <div class="sidebar-heading">
+                Menu
+            </div>
+            <li class="nav-item {{ (request()->segment(1) == "profile") ? 'active' : '' }}">
+                <a href="user" class="nav-link collapse">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="nav-item {{ (request()->segment(1) == "kusioner") ? 'active' : '' }}">
+                <a href="kusioner" class="nav-link collapse">
+                    <i class="fas fa-fw fa-book"></i>
+                    <span>Kusioner</span>
+                </a>
+            </li>
+            @endif
             
             <!--
                 <hr class="sidebar-divider">

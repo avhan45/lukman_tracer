@@ -35,10 +35,18 @@ class LoginController extends Controller
                 return back()->with('error', 'User TIdak Ditemukan');
                 return;
             }else{
-                $nama = $user->username;
-                // $request->session()->put('user', $nim);
-                $request->session()->put('nama', $nama);
-                return redirect('home');
+                if($user->level == "admin"){
+                    $nama = $user->username;
+                    $request->session()->put('nama', $nama);
+                    $request->session()->put('level', $user->level);
+                    return redirect('home');
+                }else{
+                    $nama = $user->username;
+                    // $request->session()->put('user', $nim);
+                    $request->session()->put('nama', $nama);
+                    $request->session()->put('level', $user->level);
+                    return redirect('home');
+                }
             }
         }
     }
@@ -46,6 +54,6 @@ class LoginController extends Controller
     public function logout(Request $request)
     {
         $request->session()->forget('nama');
-        return redirect('login');
+        return redirect('/');
     }
 }

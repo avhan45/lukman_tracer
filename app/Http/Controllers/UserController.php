@@ -9,19 +9,27 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        if($request->session()->has('nama')){
+        if(!empty($request->session()->has('nama'))){
             $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
         }
+
         $UserAlumni = User::All();
-        return view('user.index', compact('user','UserAlumni'));
+        return view('user.index', compact('user','UserAlumni','level'));
     }
 
     public function create(Request $request)
     {
-        if($request->session()->has('user')){
-            $user = $request->session()->get('user');
+       if(!empty($request->session()->has('nama'))){
+            $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
         }
-        return view('user.tambah', compact('user'));
+
+        return view('user.tambah', compact('user','level'));
     }
 
     public function store(Request $request)
@@ -57,11 +65,15 @@ class UserController extends Controller
 
     public function edit(Request $request, $id)
     {
-        if($request->session()->has('nama')){
+       if(!empty($request->session()->has('nama'))){
             $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
         }
+
         $dataUser = User::find($id);
-        return view('user.edit', compact('dataUser','user'));
+        return view('user.edit', compact('dataUser','user','level'));
     }
 
     public function update(Request $request,$id)
@@ -104,5 +116,17 @@ class UserController extends Controller
         $user = User::find($id);
         $user->delete();
         return redirect()->to('user')->with('warning', 'User Berhasil Di Hapus');
+    }
+
+    public function kuis(Request $request)
+    {
+        if(!empty($request->session()->has('nama'))){
+            $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
+        }
+
+        return view('user.kusioner',compact('user','level'));
     }
 }
