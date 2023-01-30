@@ -16,7 +16,10 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('nim');
+            $table->string('username');
+            $table->string('email');
             $table->string('password');
+            $table->enum('level', ['admin','mahasiswa'])->default('mahasiswa');
             $table->rememberToken();
             $table->timestamps();
         });

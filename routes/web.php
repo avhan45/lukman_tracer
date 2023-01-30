@@ -3,6 +3,8 @@
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\UserController;
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,11 +23,17 @@ Route::get('/', function () {
 });
 Route::get('/login', [LoginController::class, 'index']);
 Route::post('/proses', [LoginController::class, 'proses'] );
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 // Route::post('/alumni/create', 'AlumniController@store');
 Route::post('/alumni/create', [AlumniController::class, 'store']);
 Route::get('/home', [AlumniController::class, 'index']);
 Route::get('alumni',[AlumniController::class, 'alumni'])->name('alumni');
-Route::get('pengguna', [PenggunaController::class, 'index'])->name('pengguna');
 Route::get('/qs', function() {
     return view('kuis');
 });
+Route::get('user', [UserController::class, 'index'])->name('user');
+Route::get('/editUser/{id}', [UserController::class, 'edit'])->name('edit');
+Route::get('/deleteUser/{id}', [UserController::class, 'delete'])->name('delete');
+Route::get('/tambahUser', [UserController::class, 'create'])->name('tambahUser');
+Route::post('/user_store', [UserController::class, 'store'])->name('tambahkan');
+Route::put('/user_update/{id}', [UserController::class, 'update'])->name('update');

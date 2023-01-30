@@ -26,7 +26,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/frontend/lp/css/style.css" rel="stylesheet">
-  <link rel="icon" href="assets/images/umj.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
   <!-- =======================================================
   * Template Name: Hidayah - v2.2.0
@@ -150,7 +150,7 @@
       <div class="header">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href=""><img src="assets/images/umj.png"> AMIK GLOBAL KENDARI</h1></a>
+          <h1 class="logo mr-auto"><a href=""><img src="assets/images/amik.png"> AMIK GLOBAL KENDARI</h1></a>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/frontend/lp/img/logo.png" alt="" class="img-fluid"></a> -->
           <nav class="">
@@ -158,6 +158,12 @@
               <li class="active"><a href="/">Home</a></li>
               <li><a href="#about">Tentang Kami</a></li>
               <li class="dropdown"><a href="/qs">Kuesioner</a>
+                <!--
+                <ul>
+                  <li><a href="/login">Tracer Study</a></li>
+                  <li><a href="pengguna/qs">Pengguna Alumni</a></li>
+                </ul>
+              -->
               </li>
               <li><a href="#">Statistik</a></li>
               <li><a href="/login">Login</a></li>

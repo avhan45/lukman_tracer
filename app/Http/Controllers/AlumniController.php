@@ -3,21 +3,25 @@
 namespace App\Http\Controllers;
 
 use App\Models\Alumni;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class AlumniController extends Controller
 {
     public function index(Request $request){
-        if($request->session()->has('user')){
-            $user = $request->session()->get('user');
+        if($request->session()->has('nama')){
+            $user = $request->session()->get('nama');
         }
-        return view('dashboard', compact('user'));
+
+        $jumlah = User::count();
+        $jumlahQs = Alumni::count();
+        return view('dashboard', compact('user','jumlah','jumlahQs'));
     }
 
     public function alumni(Request $request){
         $alumni = Alumni::all();
-        if($request->session()->has('user')){
-            $user = $request->session()->get('user');
+        if($request->session()->has('nama')){
+            $user = $request->session()->get('nama');
         }
         
         return view('alumni.index',compact('alumni', 'user'));

@@ -12,16 +12,16 @@
     <title>Tracer Study</title>
 
     <!-- Custom fonts for this template-->
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" /> --}}
-    <link href="assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
 
 
@@ -69,14 +69,29 @@
                     <span>Alumni</span>
                 </a>
             </li>
-            <li class="nav-item {{ (request()->segment(1) == "pengguna") ? 'active' : '' }}">
-                <a href="pengguna" class="nav-link collapse">
-                    <i class="fas fa-fw fa-users"></i>
-                    <span>Pengguna</span>
+            
+            <hr class="sidebar-divider">
+
+
+            <div class="sidebar-heading">
+                App
+            </div>
+            <li class="nav-item {{ (request()->segment(1) == "user") ? 'active' : '' }}">
+                <a href="user" class="nav-link collapse">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>User</span>
                 </a>
             </li>
-
+            
             <!--
+                <hr class="sidebar-divider">
+                
+                <div class="sidebar-heading">
+                    Comming Soon
+                </div>
+
+            
+           
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -92,7 +107,6 @@
                 </div>
             </li>
         -->
-
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -156,7 +170,7 @@
                                     {{ $user }}
                                 </span>
                                 <img class="img-profile rounded-circle"
-                                    src="assets/img/undraw_profile.svg">
+                                    src="{{ asset('assets/img/undraw_profile.svg') }}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -215,15 +229,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Keluar Dari Aplikasi ?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-body">Apakah Anda Yakin Ingin Keluar ?</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="/logout">Ya</a>
                 </div>
             </div>
         </div>
@@ -231,20 +245,20 @@
 
     <!-- Bootstrap core JavaScript-->
     
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ asset('assets/vendor/jquery/jquery.min.js') }}"></script>
     {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{ asset('assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="assets/js/sb-admin-2.min.js"></script>
-    <script src="assets/vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="{{ asset('assets/js/sb-admin-2.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/datatables/dataTables.bootstrap4.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha256-5YmaxAwMjIpMrVlK84Y/+NjCpKnFYa8bWWBbUHSBGfU=" crossorigin="anonymous"></script>
-    <script src="assets/js/validation.js"></script>
+    <script src="{{ asset('assets/js/validation.js') }}"></script>
     @yield('scripts')
 
 </body>
