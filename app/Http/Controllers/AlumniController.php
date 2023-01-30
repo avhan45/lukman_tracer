@@ -7,14 +7,21 @@ use Illuminate\Http\Request;
 
 class AlumniController extends Controller
 {
-    public function index(){
-        return view('dashboard');
+    public function index(Request $request){
+        if($request->session()->has('user')){
+            $user = $request->session()->get('user');
+        }
+        $title = "Dashboard";
+        return view('dashboard', compact('user','title'));
     }
 
-    public function alumni(){
+    public function alumni(Request $request){
         $alumni = Alumni::all();
-
-        return view('alumni.index',compact('alumni'));
+        if($request->session()->has('user')){
+            $user = $request->session()->get('user');
+        }
+        $title = "alumni";
+        return view('alumni.index',compact('alumni', 'user','title'));
     }
 
     public function store(Request $request){

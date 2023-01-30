@@ -23,7 +23,7 @@
                             <td>1</td>
                             <td>{{ $data->nama_lengkap }}</td>
                             <td>{{ $data->jk }}</td>
-                            {{-- <td>{{ $data->thn_lulus }}</td> --}}
+                            <td>{{ $data->thn_wisuda }}</td>
                         </tr>
                         @endforeach
                         

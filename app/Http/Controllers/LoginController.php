@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -27,6 +28,9 @@ class LoginController extends Controller
                 return back()->with('error', 'User TIdak Ditemukan');
                 return;
             }else{
+                $request->session()->put('user', $nim);
+                
+                // dd($request->session()->get('user'));
                 return redirect('home');
             }
         }

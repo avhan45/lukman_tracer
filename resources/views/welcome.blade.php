@@ -182,7 +182,7 @@
             <div class="container">
               <h2 class="animated fadeInDown">Selamat datang di <span>Portal Alumni AMIK Global Kendari</span></h2>
               <p class="animated fadeInUp">Silakan login dan registrasi jika belum mendaftar</p>
-              <a href="login.php" class="btn-get-started animated fadeInUp scrollto">MASUK</a>
+              <a href="/login" class="btn-get-started animated fadeInUp scrollto">MASUK</a>
             </div>
           </div>
         </div>
