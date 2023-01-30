@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PenggunaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::post('/proses', [LoginController::class, 'proses'] );
 Route::post('/alumni/create', [AlumniController::class, 'store']);
 Route::get('/home', [AlumniController::class, 'index']);
 Route::get('alumni',[AlumniController::class, 'alumni'])->name('alumni');
+Route::get('pengguna', [PenggunaController::class, 'index'])->name('pengguna');
 Route::get('/qs', function() {
     return view('kuis');
 });

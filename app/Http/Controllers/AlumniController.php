@@ -11,8 +11,7 @@ class AlumniController extends Controller
         if($request->session()->has('user')){
             $user = $request->session()->get('user');
         }
-        $title = "Dashboard";
-        return view('dashboard', compact('user','title'));
+        return view('dashboard', compact('user'));
     }
 
     public function alumni(Request $request){
@@ -20,8 +19,8 @@ class AlumniController extends Controller
         if($request->session()->has('user')){
             $user = $request->session()->get('user');
         }
-        $title = "alumni";
-        return view('alumni.index',compact('alumni', 'user','title'));
+        
+        return view('alumni.index',compact('alumni', 'user'));
     }
 
     public function store(Request $request){
