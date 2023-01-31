@@ -92,6 +92,7 @@ return new class extends Migration
             $table->string('ind_4_10',50);
             $table->string('ind_4_11',50);
             $table->timestamps();
+            // $table->foreign('user_nim')->references('nim')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

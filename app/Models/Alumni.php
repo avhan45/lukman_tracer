@@ -13,4 +13,8 @@ class Alumni extends Model
     // protected $fillable = ['nama_lengkap', 'jk','asal_smu'];
     protected $guarded = [];
         
+    // public function user()
+    // {
+    //     return $this->belongsTo(User::class);
+    // }
 }

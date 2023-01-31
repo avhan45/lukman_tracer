@@ -98,7 +98,7 @@
                 </a>
             </li>
             <li class="nav-item {{ (request()->segment(1) == "kusioner") ? 'active' : '' }}">
-                <a href="kusioner" class="nav-link collapse">
+                <a href="/profile/kusioner" class="nav-link collapse">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Kusioner</span>
                 </a>

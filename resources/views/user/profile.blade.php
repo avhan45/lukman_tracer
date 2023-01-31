@@ -56,10 +56,15 @@
         </div>
         <div class="col-md-6">
             <div class="card" style="width: 18rem;">
+              {{-- @if($profile->photo->foto) --}}
+              @if(!empty($profile->photo->foto))
                 <img src="/images/{{ $profile->photo->foto }}" class="card-img-top rounded" alt="{{$profile->photo->foto}}">
-                <div class="card-body">
-                    <form action="{{url('update_foto',$profile->id)}}" method="POST" enctype="multipart/form-data">
-                        @csrf
+                @else
+                <img src="{{asset('assets/img/undraw_profile.svg')}}" class="card-img-top rounded" alt="Profile">
+                @endif
+              <div class="card-body">
+                <form action="{{url('update_foto',$profile->id)}}" method="POST" enctype="multipart/form-data">
+                  @csrf
                         <div class="row mb-2">
                             <input type="file" class="form-control" name="image">
                         </div>

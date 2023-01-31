@@ -15,4 +15,9 @@ class User extends Model
     {
         return $this->hasOne(Photo::class);
     }
+
+    // public function alumni()
+    // {
+    //     return $this->hasOne(Alumni::class);
+    // }
 }

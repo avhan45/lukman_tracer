@@ -22,6 +22,7 @@ class PhotoController extends Controller
                 'user_id'   => $id,
                 'foto'  => $image_name
             ]);
+            return redirect()->back()->with('success', 'Foto Berhasil di Simpan');
        }else{
             $path = "images/$photo->foto";
             
@@ -41,7 +42,7 @@ class PhotoController extends Controller
                     }else{
                         echo "Error";
                     }
-                    return redirect()->back()->with('success', "Foto Berhasil Di Simpan");
+                    return redirect()->back()->with('success', "Foto Berhasil Di Update");
             }
        }
     }
