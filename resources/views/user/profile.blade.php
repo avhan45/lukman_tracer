@@ -56,7 +56,7 @@
         </div>
         <div class="col-md-6">
             <div class="card" style="width: 18rem;">
-                {{-- <img src="/images/{{ $profile->photo->foto }}" class="card-img-top" alt="..."> --}}
+                <img src="/images/{{ $profile->photo->foto }}" class="card-img-top rounded" alt="{{$profile->photo->foto}}">
                 <div class="card-body">
                     <form action="{{url('update_foto',$profile->id)}}" method="POST" enctype="multipart/form-data">
                         @csrf

@@ -10,23 +10,39 @@ class PhotoController extends Controller
 {
     public function update_foto(Request $request,$id)
     {
-        $photo = Photo::Where('user_id', $id);
+        $photo = Photo::where('user_id', $id)->first();
 
        if($photo == null){
-        echo "Tidak Ada Foto";
+            $image = $request->file('image');
+            $image_name = $image->getClientOriginalName();
+            $path_image = "images/";
+            $image->move($path_image, $image_name);
+
+            Photo::insert([
+                'user_id'   => $id,
+                'foto'  => $image_name
+            ]);
        }else{
-            dd($photo);
+            $path = "images/$photo->foto";
+            
+            if(File::exists($path)){
+                File::delete($path);
+                $hapus = $photo->delete();
+                if($hapus){
+                    $image = $request->file('image');
+                    $image_name = $image->getClientOriginalName();
+                    $path_image = "images/";
+                    $image->move($path_image, $image_name);
+        
+                    Photo::insert([
+                        'user_id'   => $id,
+                        'foto'  => $image_name
+                    ]);
+                    }else{
+                        echo "Error";
+                    }
+                    return redirect()->back()->with('success', "Foto Berhasil Di Simpan");
+            }
        }
-        // dd($id);
-
-    //    $image = $request->file('image');
-    //     $image_name = $image->getClientOriginalName();
-    //     $path = "images/";
-    //     $image->move($path, $image_name);
-
-    //     Photo::insert([
-    //         'user_id' => $id,
-    //         'foto' => $image_name
-    //     ]);
     }
 }
