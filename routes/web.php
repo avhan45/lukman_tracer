@@ -37,4 +37,6 @@ Route::get('/deleteUser/{id}', [UserController::class, 'delete'])->name('delete'
 Route::get('/tambahUser', [UserController::class, 'create'])->name('tambahUser');
 Route::post('/user_store', [UserController::class, 'store'])->name('tambahkan');
 Route::put('/user_update/{id}',[UserController::class, 'update'])->name('update');
-Route::get('/kusioner',[UserController::class, 'kuis'])->name('kusioner');
+Route::get('/profile/kusioner',[UserController::class, 'kuis'])->name('kusioner');
+Route::get('/profile/{id}', [UserController::class, 'profile'])->name('profile');
+// Route::get('/home_user', [UserController::class, 'home'])->name('home_user');

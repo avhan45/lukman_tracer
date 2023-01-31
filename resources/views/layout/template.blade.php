@@ -23,7 +23,7 @@
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" integrity="sha256-SMGbWcp5wJOVXYlZJyAXqoVWaE/vgFA5xfrH3i/jVw0=" crossorigin="anonymous" /> --}}
     <link href="{{ asset('assets/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
 
-
+    @yield('style')
 
 </head>
 
@@ -92,9 +92,9 @@
                 Menu
             </div>
             <li class="nav-item {{ (request()->segment(1) == "profile") ? 'active' : '' }}">
-                <a href="user" class="nav-link collapse">
+                <a href="/profile/{{$nim}}" class="nav-link collapse">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Profile</span>
+                    <span>Profile </span>
                 </a>
             </li>
             <li class="nav-item {{ (request()->segment(1) == "kusioner") ? 'active' : '' }}">

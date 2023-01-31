@@ -43,6 +43,7 @@ class LoginController extends Controller
                 }else{
                     $nama = $user->username;
                     // $request->session()->put('user', $nim);
+                    $request->session()->put('nim', $user->nim);
                     $request->session()->put('nama', $nama);
                     $request->session()->put('level', $user->level);
                     return redirect('home');

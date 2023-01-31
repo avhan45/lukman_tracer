@@ -175,7 +175,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
+  <section id="hero" style="height: 68vh">
     <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
       <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>

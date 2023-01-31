@@ -10,6 +10,7 @@ class AlumniController extends Controller
 {
     public function index(Request $request){
         if(!empty($request->session()->has('nama'))){
+            $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
@@ -18,11 +19,12 @@ class AlumniController extends Controller
 
         $jumlah = User::count();
         $jumlahQs = Alumni::count();
-        return view('dashboard', compact('user','jumlah','jumlahQs','level'));
+        return view('dashboard', compact('user','jumlah','jumlahQs','level','nim'));
     }
 
     public function alumni(Request $request){
         if(!empty($request->session()->has('nama'))){
+            $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
@@ -30,7 +32,7 @@ class AlumniController extends Controller
         }
         $alumni = Alumni::all();
         
-        return view('alumni.index',compact('alumni', 'user','level'));
+        return view('alumni.index',compact('alumni', 'user','level','nim'));
     }
 
     public function store(Request $request){

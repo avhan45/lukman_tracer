@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Alumni;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -10,26 +11,34 @@ class UserController extends Controller
     public function index(Request $request)
     {
         if(!empty($request->session()->has('nama'))){
+            $nim = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
             return redirect('login');
         }
 
+        if($level == 'admin'){
+            return redirect()->to('home');
+        }else{
+            return redirect()->to('home_user');
+        }
         $UserAlumni = User::All();
-        return view('user.index', compact('user','UserAlumni','level'));
+        return view('user.index', compact('user','UserAlumni','level','nim'));
     }
 
+   
     public function create(Request $request)
     {
        if(!empty($request->session()->has('nama'))){
+        $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
             return redirect('login');
         }
 
-        return view('user.tambah', compact('user','level'));
+        return view('user.tambah', compact('user','level','nim'));
     }
 
     public function store(Request $request)
@@ -66,6 +75,7 @@ class UserController extends Controller
     public function edit(Request $request, $id)
     {
        if(!empty($request->session()->has('nama'))){
+            $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
@@ -73,7 +83,7 @@ class UserController extends Controller
         }
 
         $dataUser = User::find($id);
-        return view('user.edit', compact('dataUser','user','level'));
+        return view('user.edit', compact('dataUser','user','level','nim'));
     }
 
     public function update(Request $request,$id)
@@ -107,7 +117,7 @@ class UserController extends Controller
                 'password' => $pass
             ]);
         }
-        return redirect()->to('user')->with('success', 'Data Berhasil Di Update');
+        return redirect()->back()->with('success', 'Data Berhasil Di Update');
 
     }
 
@@ -121,12 +131,26 @@ class UserController extends Controller
     public function kuis(Request $request)
     {
         if(!empty($request->session()->has('nama'))){
+            $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
         }else{
             return redirect('login');
         }
 
-        return view('user.kusioner',compact('user','level'));
+        return view('user.kusioner',compact('user','level', 'nim'));
+    }
+
+    public function profile(Request $request,$id) 
+    {
+        if(!empty($request->session()->has('nama'))){
+            $nim  = $request->session()->get('nim');
+            $user = $request->session()->get('nama');
+            $level = $request->session()->get('level');
+        }else{
+            return redirect('login');
+        }
+        $profile = User::where('nim', $nim)->first();
+        return view('user.profile', compact('user','level', 'nim','profile'));
     }
 }
