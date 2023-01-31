@@ -3,6 +3,7 @@
 use App\Http\Controllers\AlumniController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\UserController;
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
@@ -40,3 +41,4 @@ Route::put('/user_update/{id}',[UserController::class, 'update'])->name('update'
 Route::get('/profile/kusioner',[UserController::class, 'kuis'])->name('kusioner');
 Route::get('/profile/{id}', [UserController::class, 'profile'])->name('profile');
 // Route::get('/home_user', [UserController::class, 'home'])->name('home_user');
+Route::post('/update_foto/{id}', [PhotoController::class, 'update_foto'])->name('update_foto');

@@ -56,11 +56,12 @@
         </div>
         <div class="col-md-6">
             <div class="card" style="width: 18rem;">
-                <img src="{{asset('assets/img/undraw_profile.svg')}}" class="card-img-top" alt="...">
+                {{-- <img src="/images/{{ $profile->photo->foto }}" class="card-img-top" alt="..."> --}}
                 <div class="card-body">
-                    <form action="">
+                    <form action="{{url('update_foto',$profile->id)}}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="row mb-2">
-                            <input type="file" class="form-control" name="foto">
+                            <input type="file" class="form-control" name="image">
                         </div>
                         <div class="row">
                             <button class="btn btn-success">Simpan</button>

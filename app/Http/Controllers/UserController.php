@@ -18,11 +18,11 @@ class UserController extends Controller
             return redirect('login');
         }
 
-        if($level == 'admin'){
-            return redirect()->to('home');
-        }else{
-            return redirect()->to('home_user');
-        }
+        // if($level == 'admin'){
+        //     return redirect()->to('home');
+        // }else{
+        //     return redirect()->to('home_user');
+        // }
         $UserAlumni = User::All();
         return view('user.index', compact('user','UserAlumni','level','nim'));
     }
@@ -153,4 +153,19 @@ class UserController extends Controller
         $profile = User::where('nim', $nim)->first();
         return view('user.profile', compact('user','level', 'nim','profile'));
     }
+
+    public function update_foto(Request $request,$id)
+    {
+        $request->validate([
+            'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        ]);
+        $input = $request->all();
+
+        if($image = $request->file('image')){
+            // $destinationPath = 'images';
+            // $profileImage = $image->
+        }
+        dd($id);
+    }
+    
 }
