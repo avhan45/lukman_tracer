@@ -72,12 +72,12 @@
                                        
                                     </form>
                                     <hr>
-                                    <div class="text-center">
+                                    {{-- <div class="text-center">
                                         <a class="small" href="#l">Lupa Password</a>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="#">Buat Akun</a>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

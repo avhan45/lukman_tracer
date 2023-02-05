@@ -53,6 +53,7 @@
                       </div>
                 </form>
               </div>
+              
         </div>
         <div class="col-md-6">
             <div class="card" style="width: 18rem;">

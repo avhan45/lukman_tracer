@@ -19,7 +19,8 @@ class AlumniController extends Controller
 
         $jumlah = User::count();
         $jumlahQs = Alumni::count();
-        return view('dashboard', compact('user','jumlah','jumlahQs','level','nim'));
+        $alumni = Alumni::where('nama_lengkap', $user)->first();
+        return view('dashboard', compact('user','jumlah','jumlahQs','level','nim','alumni'));
     }
 
     public function alumni(Request $request){
@@ -114,6 +115,6 @@ class AlumniController extends Controller
         $alumni->ind_4_10 = $request->ind_4_10;
         $alumni->ind_4_11 = $request->ind_4_11;
         $simpan = $alumni->save();
-        return redirect()->back();
+            return redirect()->back();
     }
 }

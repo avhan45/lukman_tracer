@@ -432,7 +432,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Saat belajar di  UMLA, menurut Saudara seberapa penting pengalaman pembelajaran berikut ini memberikan kontribusi dalam dunia kerja?</label>
+                                        <label for="">Saat belajar di  AMIK Global Kendari, menurut Saudara seberapa penting pengalaman pembelajaran berikut ini memberikan kontribusi dalam dunia kerja?</label>
                                         <table class="table ">
                                             <thead>
                                                 <tr>
@@ -448,22 +448,22 @@
                                                     <td>pengalaman belajar di dalam kelas </td>
                                                     <td class="text-center">
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" name="peng_1" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                            <input class="form-check-input" name="peng_1" value="Sangat Penting" type="checkbox" role="switch" id="peng_1">
                                                         </div>
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" name="peng_1" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                            <input class="form-check-input" name="peng_1" value="Penting" type="checkbox" role="switch" id="peng_1">
                                                         </div>
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" name="peng_1" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                            <input class="form-check-input" name="peng_1" value="Kurang Penting" type="checkbox" role="switch" id="peng_1">
                                                         </div>
                                                     </td>
                                                     <td class="text-center">
                                                         <div class="form-check form-switch">
-                                                            <input class="form-check-input" name="peng_1" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                            <input class="form-check-input" name="peng_1" value="Tidak Penting" type="checkbox" role="switch" id="peng_1">
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -655,7 +655,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for=""> Sejauh ini, menurut Saudara lulusan UMLA yang bagaimana yg diperlukan oleh pasar/lapangan
+                                        <label for=""> Sejauh ini, menurut Saudara lulusan AMIK Global Kendari yang bagaimana yg diperlukan oleh pasar/lapangan
                                             kerja?</label>
                                             <select name="ind_2" id="ind_2" class="form-control">
                                                 <option value="generik">Generik (Umum)</option>
@@ -1651,7 +1651,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="">Saat belajar di  UMLA, menurut Saudara seberapa penting pengalaman pembelajaran berikut ini memberikan kontribusi dalam dunia kerja?</label>
+                                        <label for="">Saat belajar di  AMIK Global Kendari, menurut Saudara seberapa penting pengalaman pembelajaran berikut ini memberikan kontribusi dalam dunia kerja?</label>
                                         <table class="table ">
                                             <thead>
                                                 <tr>
@@ -1874,7 +1874,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for=""> Sejauh ini, menurut Saudara lulusan UMLA yang bagaimana yg diperlukan oleh pasar/lapangan
+                                        <label for=""> Sejauh ini, menurut Saudara lulusan AMIK Global Kendari yang bagaimana yg diperlukan oleh pasar/lapangan
                                             kerja?</label>
                                             <select name="ind_2" id="ind_2" class="form-control">
                                                 <option value="generik">Generik (Umum)</option>
@@ -2583,64 +2583,8 @@
             $("#pengalaman").removeClass('btn-success');
             
         });
-        
-        // $("#next1").click(function(){
-        //     $("#dataPendidikan").removeClass('d-none');
-        //     $("#dataPribadi").addClass('d-none');
-        //     $("#dataPekerjaan").addClass('d-none');
-        //     $("#dataRelevansi").addClass('d-none');
-        //     $("#dataPengalaman").addClass('d-none');
-        //     $("#dataIndikator").addClass('d-none');
-        //     $("#pendidikan").addClass('btn-success');
-        //     $("#pribadi").removeClass('btn-success');
-        //     $("#pekerjaan").removeClass('btn-success');
-        //     $("#relevansi").removeClass('btn-success');
-        //     $("#pengalaman").removeClass('btn-success');
-        //     $("#indikator").removeClass('btn-success');
-        // });
-        // $("#next2").click(function(){
-        //     $("#dataPendidikan").addClass('d-none');
-        //     $("#dataPribadi").addClass('d-none');
-        //     $("#dataPekerjaan").removeClass('d-none');
-        //     $("#dataRelevansi").addClass('d-none');
-        //     $("#dataPengalaman").addClass('d-none');
-        //     $("#dataIndikator").addClass('d-none');
-        //     $("#pribadi").removeClass('btn-success');
-        //     $("#pendidikan").removeClass('btn-success');
-        //     $("#pekerjaan").addClass('btn-success');
-        //     $("#relevansi").removeClass('btn-success');
-        //     $("#pengalaman").removeClass('btn-success');
-        //     $("#indikator").removeClass('btn-success');
-        // });
-        // $("#next3").click(function(){
-        //     $("#dataPendidikan").addClass('d-none');
-        //     $("#dataPribadi").addClass('d-none');
-        //     $("#dataPekerjaan").addClass('d-none');
-        //     $("#dataRelevansi").removeClass('d-none');
-        //     $("#dataPengalaman").addClass('d-none');
-        //     $("#dataIndikator").addClass('d-none');
-        //     $("#pribadi").removeClass('btn-success');
-        //     $("#pendidikan").removeClass('btn-success');
-        //     $("#pekerjaan").removeClass('btn-success');
-        //     $("#relevansi").addClass('btn-success');
-        //     $("#pengalaman").removeClass('btn-success');
-        //     $("#indikator").removeClass('btn-success');
-        // });
-        // $("#next4").click(function(){
-        //     $("#dataPendidikan").addClass('d-none');
-        //     $("#dataPribadi").addClass('d-none');
-        //     $("#dataPekerjaan").addClass('d-none');
-        //     $("#dataRelevansi").addClass('d-none');
-        //     $("#dataPengalaman").removeClass('d-none');
-        //     $("#dataIndikator").addClass('d-none');
-        //     $("#pribadi").removeClass('btn-success');
-        //     $("#pendidikan").removeClass('btn-success');
-        //     $("#pekerjaan").removeClass('btn-success');
-        //     $("#relevansi").removeClass('btn-success');
-        //     $("#pengalaman").addClass('btn-success');
-        //     $("#indikator").removeClass('btn-success');
-        // });
         $("#next5").click(function(){
+            
             $("#dataPendidikan").addClass('d-none');
             $("#dataPribadi").addClass('d-none');
             $("#dataPekerjaan").addClass('d-none');
@@ -2654,6 +2598,7 @@
             $("#pengalaman").removeClass('btn-success');
             $("#indikator").addClass('btn-success');
         });
+        
         
 
         // $("#tahunmasuk").datepicker({

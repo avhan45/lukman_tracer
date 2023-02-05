@@ -512,22 +512,22 @@
                                                             <td>pengalaman belajar di dalam kelas </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" name="peng_1" value="Sangat Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Sangat Penting" type="checkbox" role="switch" id="peng_1">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" name="peng_1" value="Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Penting" type="checkbox" role="switch" id="peng_1">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" name="peng_1" value="Kurang Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Kurang Penting" type="checkbox" role="switch" id="peng_1">
                                                                 </div>
                                                             </td>
                                                             <td class="text-center">
                                                                 <div class="form-check form-switch">
-                                                                    <input class="form-check-input" name="peng_1" value="Tidak Penting" type="checkbox" role="switch" id="flexSwitchCheckDefault5">
+                                                                    <input class="form-check-input" name="peng_1" value="Tidak Penting" type="checkbox" role="switch" id="peng_1">
                                                                 </div>
                                                             </td>
                                                         </tr>

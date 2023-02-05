@@ -157,7 +157,7 @@
             <ul class="cf">
               <li class="active"><a href="/">Home</a></li>
               <li><a href="#about">Tentang Kami</a></li>
-              <li class="dropdown"><a href="/qs">Kuesioner</a>
+              {{-- <li class="dropdown"><a href="/qs">Kuesioner</a> --}}
                 <!--
                 <ul>
                   <li><a href="/login">Tracer Study</a></li>
@@ -165,7 +165,7 @@
                 </ul>
               -->
               </li>
-              <li><a href="#">Statistik</a></li>
+              {{-- <li><a href="#">Statistik</a></li> --}}
               <li><a href="/login">Login</a></li>
           </nav><!-- .nav-menu -->
 
@@ -183,7 +183,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url('assets/frontend/lp/img/slide/sl1.jpg')">
+        <div class="carousel-item active" style="background-image: url('assets/frontend/lp/img/slide/ps1.jpg'); background-size:cover;background-position-y: center;">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">Selamat datang di <span>Portal Alumni AMIK Global Kendari</span></h2>
@@ -194,7 +194,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url('assets/frontend/lp/img/slide/sl2.jpg')">
+        <div class="carousel-item" style="background-image: url('assets/frontend/lp/img/slide/ps2.jpg');background-size:cover;background-size:cover;background-position-y: center;">
           <div class="carousel-container">
             <div class="container">
               <h2 class="animated fadeInDown">TRACER STUDY </h2>

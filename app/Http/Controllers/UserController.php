@@ -19,7 +19,8 @@ class UserController extends Controller
         }
 
         $UserAlumni = User::All();
-        return view('user.index', compact('user','UserAlumni','level','nim'));
+        $alumni = Alumni::where('nama_lengkap', $user)->first();
+        return view('user.index', compact('user','UserAlumni','level','nim','alumni'));
     }
 
    
@@ -33,7 +34,8 @@ class UserController extends Controller
             return redirect('login');
         }
 
-        return view('user.tambah', compact('user','level','nim'));
+        $alumni = Alumni::where('nama_lengkap', $user)->first();
+        return view('user.tambah', compact('user','level','nim','alumni'));
     }
 
     public function store(Request $request)
@@ -78,11 +80,13 @@ class UserController extends Controller
         }
 
         $dataUser = User::find($id);
-        return view('user.edit', compact('dataUser','user','level','nim'));
+        $alumni = Alumni::where('nama_lengkap', $user)->first();
+        return view('user.edit', compact('dataUser','user','level','nim','alumni'));
     }
 
     public function update(Request $request,$id)
     {
+        $nim = $request->post('nim');
         $nama   = $request->post('nama');
         $email = $request->post('email');
         $pass   = $request->post('password');
@@ -149,7 +153,8 @@ class UserController extends Controller
             return redirect('login');
         }
         $profile = User::where('nim', $nim)->first();
-        return view('user.profile', compact('user','level', 'nim','profile'));
+        $alumni = Alumni::where('nama_lengkap', $user)->first();
+        return view('user.profile', compact('user','level', 'nim','profile','alumni'));
     }
 
     
