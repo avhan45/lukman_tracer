@@ -11,19 +11,23 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>No</th>
+                            <th width="30">No</th>
                             <th>Nama</th>
                             <th>Jk</th>
                             <th>Lulus</th>
+                            <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($alumni as $data)
                         <tr>
-                            <td>1</td>
+                            <td class="text-center">{{ $loop->iteration }}</td>
                             <td>{{ $data->nama_lengkap }}</td>
                             <td>{{ $data->jk }}</td>
                             <td>{{ $data->thn_wisuda }}</td>
+                            <td class="text-center">
+                                <a href="" class="btn btn-info btn-sm"> <i class="fas fa-eye"></i> </a>
+                            </td>
                         </tr>
                         @endforeach
                         
