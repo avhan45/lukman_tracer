@@ -29,9 +29,7 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 Route::post('/alumni/create', [AlumniController::class, 'store']);
 Route::get('/home', [AlumniController::class, 'index']);
 Route::get('alumni',[AlumniController::class, 'alumni'])->name('alumni');
-Route::get('/qs', function() {
-    return view('kuis');
-});
+// Route::get('/detail/{id}', [AlumniController::class, 'detail'])->name('detail');
 Route::get('user', [UserController::class, 'index'])->name('user');
 Route::get('/editUser/{id}', [UserController::class, 'edit'])->name('edit');
 Route::get('/deleteUser/{id}', [UserController::class, 'delete'])->name('delete');

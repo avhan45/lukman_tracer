@@ -36,6 +36,19 @@ class AlumniController extends Controller
         return view('alumni.index',compact('alumni', 'user','level','nim'));
     }
 
+    // public function detail(Request $request, $id)
+    // {
+    //     if(!empty($request->session()->has('nama'))){
+    //         $nim  = $request->session()->get('nim');
+    //         $user = $request->session()->get('nama');
+    //         $level = $request->session()->get('level');
+    //     }else{
+    //         return redirect('login');
+    //     }
+    //     $alumni = Alumni::find($id);
+    //     return view('alumni.detail', compact('alumni', 'user','level','nim'));
+    // }
+
     public function store(Request $request){
         $alumni = new Alumni();
         $alumni->nama_lengkap = $request->nama_lengkap;
@@ -117,4 +130,6 @@ class AlumniController extends Controller
         $simpan = $alumni->save();
             return redirect()->back();
     }
+
+
 }

@@ -12,10 +12,11 @@
                     <thead>
                         <tr>
                             <th width="30">No</th>
+                            <th>Nim</th>
                             <th>Nama</th>
-                            <th>Jk</th>
-                            <th>Lulus</th>
-                            <th class="text-center">Aksi</th>
+                            <th>Jurusan</th>
+                            <th>Tahun Lulus</th>
+                            {{-- <th class="text-center">Aksi</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -23,11 +24,11 @@
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
                             <td>{{ $data->nama_lengkap }}</td>
-                            <td>{{ $data->jk }}</td>
+                            <td>{{ $data->prodi }}</td>
                             <td>{{ $data->thn_wisuda }}</td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-info btn-sm"> <i class="fas fa-eye"></i> </a>
-                            </td>
+                            {{-- <td class="text-center">
+                                <a href="{{ url('detail',$data->id) }}" class="btn btn-info btn-sm"> <i class="fas fa-eye"></i> </a>
+                            </td> --}}
                         </tr>
                         @endforeach
                         
