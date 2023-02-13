@@ -23,7 +23,8 @@
   <link href="assets/frontend/lp/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/frontend/lp/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/frontend/lp/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  {{-- <link rel="stylesheet" href="assets/css/fontawesome.min.css"> --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/frontend/lp/css/style.css" rel="stylesheet">
   <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -139,6 +140,30 @@
     .cf:after {
       clear: both;
     }
+    .icon-responsive{
+      display: none;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+      #header .logo{
+        font-size: small;
+      }
+      .menu{
+        display: none;
+      }
+     
+      .icon-responsive{
+        display: block;
+        color: white;
+      }
+      .icon-responsive:hover{
+        color: black;
+      }
+      
+      
+  }
+
   </style>
 </head>
 
@@ -150,11 +175,11 @@
       <div class="header">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto">
+          <h1 class="logo mr-auto" id="logo">
             <a href=""><img src="assets/images/amik.png"> AMIK GLOBAL KENDARI</h1></a>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/frontend/lp/img/logo.png" alt="" class="img-fluid"></a> -->
-          <nav class="mobile-nav">
+          <nav class="menu" id="menu">
             <ul class="cf">
               <li class="active"><a href="/">Home</a></li>
               <li><a href="#about">Tentang Kami</a></li>
@@ -169,8 +194,9 @@
               {{-- <li><a href="#">Statistik</a></li> --}}
               <li><a href="/login">Login</a></li>
           </nav><!-- .nav-menu -->
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa-solid fa-bars"></i>
+          <a href="javascript:void(0);" class="icon-responsive" onclick="myFunction()">
+            {{-- <i class="fa-solid fa-bars"></i> --}}
+            <i class="fa fa-solid fa-bars"></i>
           </a>
 
         </div>
@@ -346,6 +372,27 @@
 
   <!-- Template Main JS File -->
   <script src="assets/frontend/lp/js/main.js"></script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        
+      } else {
+        x.style.display = "block";
+        $(".menu").addClass("active");
+        $(".menu").css("background-color","black");
+        $(".menu").css("position","fixed");
+        $(".menu").css("top","70px");
+        $(".menu").css("left","23px");
+        // x.style.position = "fixed";
+        // x.style.background-color ="rgb(109, 131, 208)";
+        // x.style.top = "70px";
+        // x.style.left = "23px";
+
+      }
+    } 
+  </script>
 </body>
 
 </html>
