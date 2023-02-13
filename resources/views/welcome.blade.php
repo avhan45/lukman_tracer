@@ -23,7 +23,7 @@
   <link href="assets/frontend/lp/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/frontend/lp/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/frontend/lp/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <!-- Template Main CSS File -->
   <link href="assets/frontend/lp/css/style.css" rel="stylesheet">
   <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -150,10 +150,11 @@
       <div class="header">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href=""><img src="assets/images/amik.png"> AMIK GLOBAL KENDARI</h1></a>
+          <h1 class="logo mr-auto">
+            <a href=""><img src="assets/images/amik.png"> AMIK GLOBAL KENDARI</h1></a>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/frontend/lp/img/logo.png" alt="" class="img-fluid"></a> -->
-          <nav class="">
+          <nav class="mobile-nav">
             <ul class="cf">
               <li class="active"><a href="/">Home</a></li>
               <li><a href="#about">Tentang Kami</a></li>
@@ -168,6 +169,9 @@
               {{-- <li><a href="#">Statistik</a></li> --}}
               <li><a href="/login">Login</a></li>
           </nav><!-- .nav-menu -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+          </a>
 
         </div>
       </div>
