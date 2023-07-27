@@ -10,32 +10,33 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        if(!empty($request->session()->has('nama'))){
+        if (!empty($request->session()->has('id'))) {
             $nim = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
-        }else{
+        } else {
             return redirect('login');
         }
 
         $UserAlumni = User::All();
         $alumni = Alumni::where('nama_lengkap', $user)->first();
-        return view('user.index', compact('user','UserAlumni','level','nim','alumni'));
+        return view('user.index', compact('user', 'UserAlumni', 'level', 'nim', 'alumni'));
     }
 
-   
+
     public function create(Request $request)
     {
-       if(!empty($request->session()->has('nama'))){
-        $nim  = $request->session()->get('nim');
+        if (!empty($request->session()->has('id'))) {
+            $id  = $request->session()->get('id');
+            $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
-        }else{
+        } else {
             return redirect('login');
         }
 
-        $alumni = Alumni::where('nama_lengkap', $user)->first();
-        return view('user.tambah', compact('user','level','nim','alumni'));
+        $alumni = Alumni::where('id', $id)->first();
+        return view('user.tambah', compact('user', 'level', 'nim', 'alumni'));
     }
 
     public function store(Request $request)
@@ -45,19 +46,21 @@ class UserController extends Controller
         $email  = $request->post('email');
         $pass   = $request->post('password');
         // Validasi
-        $validated = $request->validate([
-            'nim' => 'required|unique:users',
-            'nama' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required'
-        ],
-        [
-            'nim.required' => 'Nim Tidak Boleh Kosong',
-            'nim.unique' => 'Nim Sudah Terdaftar',
-            'nama.required' => 'Nama Tidak Boleh Kosong',
-            'email.required' => 'Email Tidak Boleh Kosong',
-            'password.required' => 'Password Tidak Boleh Kosong',
-        ]);
+        $validated = $request->validate(
+            [
+                'nim' => 'required|unique:users',
+                'nama' => 'required',
+                'email' => 'required|email|unique:users',
+                'password' => 'required'
+            ],
+            [
+                'nim.required' => 'Nim Tidak Boleh Kosong',
+                'nim.unique' => 'Nim Sudah Terdaftar',
+                'nama.required' => 'Nama Tidak Boleh Kosong',
+                'email.required' => 'Email Tidak Boleh Kosong',
+                'password.required' => 'Password Tidak Boleh Kosong',
+            ]
+        );
 
         $user = User::insert([
             'nim' => $nim,
@@ -71,20 +74,21 @@ class UserController extends Controller
 
     public function edit(Request $request, $id)
     {
-       if(!empty($request->session()->has('nama'))){
+        if (!empty($request->session()->has('id'))) {
+            $id  = $request->session()->get('nim');
             $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
-        }else{
+        } else {
             return redirect('login');
         }
 
         $dataUser = User::find($id);
-        $alumni = Alumni::where('nama_lengkap', $user)->first();
-        return view('user.edit', compact('dataUser','user','level','nim','alumni'));
+        $alumni = Alumni::where('id', $id)->first();
+        return view('user.edit', compact('dataUser', 'user', 'level', 'nim', 'alumni'));
     }
 
-    public function update(Request $request,$id)
+    public function update(Request $request, $id)
     {
         $nim = $request->post('nim');
         $nama   = $request->post('nama');
@@ -92,23 +96,25 @@ class UserController extends Controller
         $pass   = $request->post('password');
 
         $user = User::find($id);
-        
-        if($pass == ''){
+
+        if ($pass == '') {
             $user->update([
                 'nim'   => $user->nim,
                 'username' => $nama,
                 'email' => $email,
                 'password' => $user->password
             ]);
-        }else{
-            $validated = $request->validate([
-                'nama' => 'required',
-                'password' => 'min:3'
-            ],
-            [
-                'nama.required' => 'Nama Tidak Boleh Kosong',
-                'password.min' => 'Password Minimal 3 Karakter',
-            ]);
+        } else {
+            $validated = $request->validate(
+                [
+                    'nama' => 'required',
+                    'password' => 'min:3'
+                ],
+                [
+                    'nama.required' => 'Nama Tidak Boleh Kosong',
+                    'password.min' => 'Password Minimal 3 Karakter',
+                ]
+            );
             $user->update([
                 'nim'   => $user->nim,
                 'username' => $nama,
@@ -117,7 +123,6 @@ class UserController extends Controller
             ]);
         }
         return redirect()->back()->with('success', 'Data Berhasil Di Update');
-
     }
 
     public function delete($id)
@@ -129,34 +134,33 @@ class UserController extends Controller
 
     public function kuis(Request $request)
     {
-        if(!empty($request->session()->has('nama'))){
+        if (!empty($request->session()->has('id'))) {
+            $id  = $request->session()->get('nim');
             $nim  = $request->session()->get('nim');
             $email  = $request->session()->get('email');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
-        }else{
+        } else {
             return redirect('login');
         }
 
-        $alumni = Alumni::where('nama_Lengkap', $user)->first();
-
-        return view('user.kusioner',compact('user','level', 'nim', 'alumni','email'));
+        $alumni = Alumni::where('email', $email)->first();
+        // dd($alumni);
+        return view('user.kusioner', compact('user', 'level', 'nim', 'alumni', 'email'));
     }
 
-    public function profile(Request $request,$id) 
+    public function profile(Request $request, $id)
     {
-        if(!empty($request->session()->has('nama'))){
+        if (!empty($request->session()->has('id'))) {
+            $id  = $request->session()->get('id');
             $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
-        }else{
+        } else {
             return redirect('login');
         }
         $profile = User::where('nim', $nim)->first();
-        $alumni = Alumni::where('nama_lengkap', $user)->first();
-        return view('user.profile', compact('user','level', 'nim','profile','alumni'));
+        $alumni = Alumni::where('id', $id)->first();
+        return view('user.profile', compact('user', 'level', 'nim', 'profile', 'alumni'));
     }
-
-    
-    
 }

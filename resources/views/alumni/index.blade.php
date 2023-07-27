@@ -23,6 +23,7 @@
                         @foreach ($alumni as $data)
                         <tr>
                             <td class="text-center">{{ $loop->iteration }}</td>
+                            <td>{{ $nim }}</td>
                             <td>{{ $data->nama_lengkap }}</td>
                             <td>{{ $data->prodi }}</td>
                             <td>{{ $data->thn_wisuda }}</td>

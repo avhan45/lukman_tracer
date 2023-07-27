@@ -1482,62 +1482,7 @@
                     
                 });
                 
-                // $("#next1").click(function(){
-                //     $("#dataPendidikan").removeClass('d-none');
-                //     $("#dataPribadi").addClass('d-none');
-                //     $("#dataPekerjaan").addClass('d-none');
-                //     $("#dataRelevansi").addClass('d-none');
-                //     $("#dataPengalaman").addClass('d-none');
-                //     $("#dataIndikator").addClass('d-none');
-                //     $("#pendidikan").addClass('btn-success');
-                //     $("#pribadi").removeClass('btn-success');
-                //     $("#pekerjaan").removeClass('btn-success');
-                //     $("#relevansi").removeClass('btn-success');
-                //     $("#pengalaman").removeClass('btn-success');
-                //     $("#indikator").removeClass('btn-success');
-                // });
-                // $("#next2").click(function(){
-                //     $("#dataPendidikan").addClass('d-none');
-                //     $("#dataPribadi").addClass('d-none');
-                //     $("#dataPekerjaan").removeClass('d-none');
-                //     $("#dataRelevansi").addClass('d-none');
-                //     $("#dataPengalaman").addClass('d-none');
-                //     $("#dataIndikator").addClass('d-none');
-                //     $("#pribadi").removeClass('btn-success');
-                //     $("#pendidikan").removeClass('btn-success');
-                //     $("#pekerjaan").addClass('btn-success');
-                //     $("#relevansi").removeClass('btn-success');
-                //     $("#pengalaman").removeClass('btn-success');
-                //     $("#indikator").removeClass('btn-success');
-                // });
-                // $("#next3").click(function(){
-                //     $("#dataPendidikan").addClass('d-none');
-                //     $("#dataPribadi").addClass('d-none');
-                //     $("#dataPekerjaan").addClass('d-none');
-                //     $("#dataRelevansi").removeClass('d-none');
-                //     $("#dataPengalaman").addClass('d-none');
-                //     $("#dataIndikator").addClass('d-none');
-                //     $("#pribadi").removeClass('btn-success');
-                //     $("#pendidikan").removeClass('btn-success');
-                //     $("#pekerjaan").removeClass('btn-success');
-                //     $("#relevansi").addClass('btn-success');
-                //     $("#pengalaman").removeClass('btn-success');
-                //     $("#indikator").removeClass('btn-success');
-                // });
-                // $("#next4").click(function(){
-                //     $("#dataPendidikan").addClass('d-none');
-                //     $("#dataPribadi").addClass('d-none');
-                //     $("#dataPekerjaan").addClass('d-none');
-                //     $("#dataRelevansi").addClass('d-none');
-                //     $("#dataPengalaman").removeClass('d-none');
-                //     $("#dataIndikator").addClass('d-none');
-                //     $("#pribadi").removeClass('btn-success');
-                //     $("#pendidikan").removeClass('btn-success');
-                //     $("#pekerjaan").removeClass('btn-success');
-                //     $("#relevansi").removeClass('btn-success');
-                //     $("#pengalaman").addClass('btn-success');
-                //     $("#indikator").removeClass('btn-success');
-                // });
+               
                 $("#next5").click(function(){
                     $("#dataPendidikan").addClass('d-none');
                     $("#dataPribadi").addClass('d-none');
