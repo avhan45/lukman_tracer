@@ -9,10 +9,10 @@ class Alumni extends Model
 {
     use HasFactory;
     protected $table = 'alumni';
-    protected $primarykey = 'id_alumni';
+    protected $primarykey = 'id';
     // protected $fillable = ['nama_lengkap', 'jk','asal_smu'];
     protected $guarded = [];
-        
+
     // public function user()
     // {
     //     return $this->belongsTo(User::class);

@@ -44,6 +44,7 @@ class AlumniController extends Controller
         // dd($request->peng_kelas);
         $alumni = Alumni::find($id);
         $alumni->update([
+            'users_id' => session()->get('id'),
             'nama_lengkap' => $request->nama_lengkap,
             'jk' => $request->jk,
             'asal_smu' => $request->asalsma,
@@ -122,7 +123,7 @@ class AlumniController extends Controller
             'ind_4_11' => $request->ind_4_11
 
         ]);
-        $user = User::find($id);
+        $user = User::find(session()->get('id'));
 
         $user->update([
             'username' => $request->nama_lengkap,
@@ -136,7 +137,10 @@ class AlumniController extends Controller
 
     public function store(Request $request)
     {
+
         $alumni = new Alumni();
+        // dd($alumni->user_id);
+        $alumni->users_id = session()->get('id');
         $alumni->nama_lengkap = $request->nama_lengkap;
         $alumni->jk = $request->jk;
         $alumni->asal_smu = $request->asalsma;

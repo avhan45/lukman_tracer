@@ -9,7 +9,7 @@ class User extends Model
 {
     use HasFactory;
     protected $table = 'users';
-    protected $fillable = ['nim','username','email','password'];
+    protected $fillable = ['nim', 'username', 'email', 'password'];
 
     public function photo()
     {

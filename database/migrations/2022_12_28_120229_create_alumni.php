@@ -13,8 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('alumni', function (Blueprint $table){
+        Schema::create('alumni', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('users_id')->nullable();
             $table->string('nama_lengkap');
             $table->string('jk');
             $table->string('asal_smu');
@@ -32,7 +33,7 @@ return new class extends Migration
             $table->string('kab');
             $table->string('prov');
             $table->string('no_telp');
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('thn_masuk');
             $table->string('bln_wisuda');
             $table->string('thn_wisuda');
@@ -67,32 +68,32 @@ return new class extends Migration
             $table->string('peng_mandiri')->nullable();
             $table->string('ind_1')->nullable();
             $table->string('ind_2')->nullable();
-            $table->string('ind_3',50)->nullable();
-            $table->string('ind_3_1',50)->nullable();
-            $table->string('ind_3_2',50)->nullable();
-            $table->string('ind_3_3',50)->nullable();
-            $table->string('ind_3_4',50)->nullable();
-            $table->string('ind_3_5',50)->nullable();
-            $table->string('ind_3_6',50)->nullable();
-            $table->string('ind_3_7',50)->nullable();
-            $table->string('ind_3_8',50)->nullable();
-            $table->string('ind_3_9',50)->nullable();
-            $table->string('ind_3_10',50)->nullable();
-            $table->string('ind_3_11',50)->nullable();
+            $table->string('ind_3', 50)->nullable();
+            $table->string('ind_3_1', 50)->nullable();
+            $table->string('ind_3_2', 50)->nullable();
+            $table->string('ind_3_3', 50)->nullable();
+            $table->string('ind_3_4', 50)->nullable();
+            $table->string('ind_3_5', 50)->nullable();
+            $table->string('ind_3_6', 50)->nullable();
+            $table->string('ind_3_7', 50)->nullable();
+            $table->string('ind_3_8', 50)->nullable();
+            $table->string('ind_3_9', 50)->nullable();
+            $table->string('ind_3_10', 50)->nullable();
+            $table->string('ind_3_11', 50)->nullable();
             $table->string('ind_4', 50)->nullable();
             $table->string('ind_4_1', 50)->nullable();
-            $table->string('ind_4_2',50)->nullable();
-            $table->string('ind_4_3',50)->nullable();
+            $table->string('ind_4_2', 50)->nullable();
+            $table->string('ind_4_3', 50)->nullable();
             $table->string('ind_4_4', 50)->nullable();
-            $table->string('ind_4_5',50)->nullable();
-            $table->string('ind_4_6',50)->nullable();
+            $table->string('ind_4_5', 50)->nullable();
+            $table->string('ind_4_6', 50)->nullable();
             $table->string('ind_4_7', 50)->nullable();
-            $table->string('ind_4_8',50)->nullable();
-            $table->string('ind_4_9',50)->nullable();
-            $table->string('ind_4_10',50)->nullable();
-            $table->string('ind_4_11',50)->nullable();
+            $table->string('ind_4_8', 50)->nullable();
+            $table->string('ind_4_9', 50)->nullable();
+            $table->string('ind_4_10', 50)->nullable();
+            $table->string('ind_4_11', 50)->nullable();
             $table->timestamps();
-            // $table->foreign('user_nim')->references('nim')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('users_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

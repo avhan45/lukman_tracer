@@ -75,7 +75,7 @@ class UserController extends Controller
     public function edit(Request $request, $id)
     {
         if (!empty($request->session()->has('id'))) {
-            $id  = $request->session()->get('nim');
+            // $id  = $request->session()->get('nim');
             $nim  = $request->session()->get('nim');
             $user = $request->session()->get('nama');
             $level = $request->session()->get('level');
@@ -135,7 +135,7 @@ class UserController extends Controller
     public function kuis(Request $request)
     {
         if (!empty($request->session()->has('id'))) {
-            $id  = $request->session()->get('nim');
+            $id  = $request->session()->get('id');
             $nim  = $request->session()->get('nim');
             $email  = $request->session()->get('email');
             $user = $request->session()->get('nama');
@@ -144,7 +144,7 @@ class UserController extends Controller
             return redirect('login');
         }
 
-        $alumni = Alumni::where('email', $email)->first();
+        $alumni = Alumni::where('users_id', $id)->first();
         // dd($alumni);
         return view('user.kusioner', compact('user', 'level', 'nim', 'alumni', 'email'));
     }

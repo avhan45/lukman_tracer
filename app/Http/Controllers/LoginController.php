@@ -23,39 +23,36 @@ class LoginController extends Controller
         $nim = $request->get('nim');
         $pass = $request->get('password');
 
-
         if (empty($nim) || empty($pass)) {
-            return back()->with('error', 'Nim dan Password Tidak Boleh Kosong');
-            return;
-        } else {
-            $user = User::where('nim', $nim)
-                ->orWhere('username', $nim)
-                ->where('password', $pass)
-                ->first();
+            return back()->with('error', 'NIM dan Password Tidak Boleh Kosong');
+        }
 
-            if (empty($user)) {
-                return back()->with('error', 'User TIdak Ditemukan');
-                return;
-            } else {
-                if ($user->level == "admin") {
-                    $nama = $user->username;
-                    $request->session()->put('id', $user->id);
-                    $request->session()->put('nama', $nama);
-                    $request->session()->put('level', $user->level);
-                    return redirect('home');
-                } else {
-                    $nama = $user->username;
-                    // $request->session()->put('user', $nim);
-                    $request->session()->put('id', $user->id);
-                    $request->session()->put('nim', $user->nim);
-                    $request->session()->put('nama', $nama);
-                    $request->session()->put('email', $user->email);
-                    $request->session()->put('level', $user->level);
-                    return redirect('home');
-                }
-            }
+        $user = User::where(function ($query) use ($nim) {
+            $query->where('nim', $nim)
+                ->orWhere('username', $nim);
+        })->first();
+
+        if (empty($user)) {
+            return back()->with('error', 'User Tidak Ditemukan atau Password Salah');
+        }
+
+        // The user exists, so now check the password
+        if ($pass === $user->password) {
+            // Password matches
+            $request->session()->put('id', $user->id);
+            $request->session()->put('nim', $user->nim);
+            $request->session()->put('nama', $user->username);
+            $request->session()->put('email', $user->email);
+            $request->session()->put('level', $user->level);
+
+            return redirect('home');
+        } else {
+            // Password is incorrect
+            return back()->with('error', 'User Tidak Ditemukan atau Password Salah');
         }
     }
+
+
 
     public function logout(Request $request)
     {

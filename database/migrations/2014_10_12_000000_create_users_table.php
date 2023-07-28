@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('username');
             $table->string('email');
             $table->string('password');
-            $table->enum('level', ['admin','mahasiswa'])->default('mahasiswa');
+            $table->enum('level', ['admin', 'mahasiswa'])->default('mahasiswa');
             $table->rememberToken();
             $table->timestamps();
         });

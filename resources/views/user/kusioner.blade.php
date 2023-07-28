@@ -158,7 +158,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">E-Mail</label>
-                                        <input type="text" name="email" id="email" class="form-control" value="{{$email}} ">
+                                        <input type="text" name="email" id="email" class="form-control" value="{{$alumni->email}} ">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -1388,7 +1388,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="">E-Mail</label>
-                                        <input type="text" name="email" id="email" class="form-control" >
+                                        <input type="text" name="email" id="email" class="form-control" value="{{ $email }}">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
